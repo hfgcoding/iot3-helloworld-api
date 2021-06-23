@@ -6,7 +6,7 @@ const port = 3000
 app.use(cors())
 
 app.get('/api/v1/hello', (req, res) => {
-  res.status(200).send({ msg: 'Hello World!', secret: process.env.SECRET }).end()
+  res.status(200).send({ msg: 'Hello CI/CD World!', secret: process.env.SECRET }).end()
 })
 
 app.listen(port, () => {
